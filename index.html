@@ -1,11 +1,9 @@
 <html>
 	<head>
 		<title>6666</title>
-		
+		<link rel="stylesheet" href="css/newyear.css" />
 	</head>
 	<body >
-		<script type="module" src="newyear.js"></script>
-		<link rel="stylesheet" href="newyear.css">
 <div class="container nav_container mt-5">
 <div class="col-sm-12 col-md-12 mauto">
   <svg width="100%" height="100%" viewBox="0 0 750 500" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -462,7 +460,7 @@
     <path id="NEWYEAR" d="M290.492 257.578V273.373L280.16 257.578H272.401V285.487H280.16V269.89L290.492 285.487H298.251V257.578H290.492ZM320.525 257.578H302.671V285.487H320.525V279.272H310.43V274.244H319.337V268.346H310.43V263.793H320.525V257.578ZM329.98 285.487H339.521L343.44 268.385L347.28 285.487H356.82L363.669 257.578H355.276L352.03 276.501L347.755 257.578H339.244L334.849 276.659L331.603 257.578H323.211L329.98 285.487ZM382.298 276.62V285.487H390.096V276.62L399.914 257.578H391.165L386.256 268.346L381.348 257.578H372.48L382.298 276.62ZM420.15 257.578H402.296V285.487H420.15V279.272H410.055V274.244H418.962V268.346H410.055V263.793H420.15V257.578ZM443.144 285.487H451.338L441.204 257.578H432.257L422.083 285.487H430.238L431.743 280.934H441.639L443.144 285.487ZM439.7 274.996H433.722L436.691 265.971L439.7 274.996ZM468.633 266.96C468.633 268.86 467.564 269.89 465.466 269.89H461.626V264.07H465.466C467.564 264.07 468.633 265.218 468.633 266.96ZM453.867 257.578V285.487H461.626V275.194H462.458L468 285.487H476.669L470.375 274.601C474.532 273.334 476.511 270.167 476.511 266.525C476.511 261.537 473.027 257.578 466.1 257.578H453.867Z" fill="#EFC87E" stroke="#EFC87E" stroke-width="1px"/>
    
     </g>
-    </svg>
+    </svg><script src="js/newyear.js" defer></script>
   <script>
 /* 轻微视差：鼠标移动时整个 SVG 跟一点角度 */
 const svg = document.getElementById('newyear2020');
@@ -470,7 +468,8 @@ document.addEventListener('mousemove', e => {
   const x = (e.clientX / innerWidth  - 0.5) * 15;
   const y = (e.clientY / innerHeight - 0.5) * 15;
   svg.style.transform = `translate(${x}px, ${y}px)`;
-});
+	});
+	
 </script>
 	</body>
 </html>
